@@ -1,0 +1,10 @@
+pyserial
+pydantic
+rich
+opencv-python
+numpy
+pillow
+RPi.GPIO; platform_system=="Linux"
+smbus2
+adafruit-circuitpython-ina219
+adafruit-circuitpython-dht
