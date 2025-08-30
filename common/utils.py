@@ -1,12 +1,12 @@
 """Utility functions."""
 
-from datetime import datetime
+from datetime import datetime, timezone
 from typing import Any
 
 
 def current_time_iso() -> str:
     """Return the current UTC time in ISO-8601 format."""
-    return datetime.utcnow().isoformat() + "Z"
+    return datetime.now(timezone.utc).isoformat()
 
 
 def clamp(value: float, minimum: float, maximum: float) -> float:
